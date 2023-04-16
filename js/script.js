@@ -336,11 +336,11 @@ $(document).ready(function() {
 	// 07. COUNTDOWN
 	//===================================================================================
 	var theday = new Date();
-	theday = new Date(2023, 6, 24, 17, 30);
-	$('#countdown').countdown({until: theday, format: 'DHM'});
+	theday = new Date(2023, 6-1, 24, 17, 30);
+	$('#countdown').countdown({until: theday, format: 'DHMS'});
 	$('#countdown').countdown($.countdown.regionalOptions['custom-label']); 
 		 
-	$('#date-countdown').countdown({until: theday, format: 'DHM'});
+	$('#date-countdown').countdown({until: theday, format: 'DHMS'});
 		 
 	// 08. MOBILE MENU
 	//==================================================================================
